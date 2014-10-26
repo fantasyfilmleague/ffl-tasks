@@ -1,7 +1,7 @@
 {
   "name": "ffl-tasks",
   "private": true,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Fantasy Film League Email",
   "main": "index.js",
   "bin": {
