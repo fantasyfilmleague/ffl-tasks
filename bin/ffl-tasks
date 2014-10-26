@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var dotenv = require('dotenv');
+var taskWorker = require('../index').worker;
+
+dotenv.load();
+
+var worker = taskWorker.create(require('../lib/handlers'));
+
+process.once('SIGINT', function () {
+  worker.close(function () { });
+});
+
+worker.listen(function () {
+  console.log('Waiting for messages. To exit press CTRL+C...');
+});

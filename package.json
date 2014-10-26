@@ -1,0 +1,23 @@
+{
+  "name": "ffl-tasks",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Fantasy Film League Email",
+  "main": "index.js",
+  "bin": {
+    "ffl-tasks": "./bin/ffl-tasks"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bird Duck Software",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "0.3.0",
+    "dotenv": "0.4.0",
+    "ffl-email": "fantasyfilmleague/ffl-email",
+    "ffl-services": "fantasyfilmleague/ffl-services",
+    "ffl-utils": "fantasyfilmleague/ffl-utils",
+    "moment": "2.8.3"
+  }
+}
